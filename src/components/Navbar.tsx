@@ -45,7 +45,19 @@ export const Navbar = () => {
             >
               Login
             </Button>
-            <Button variant="primary" size="sm" className="bg-gradient-to-r from-rose-500 to-red-600">Register Free</Button>
+            <Button
+              variant="primary"
+              size="sm"
+              className="bg-gradient-to-r from-rose-500 to-red-600"
+              onClick={() => {
+                document.getElementById('login')?.scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'start',
+                });
+              }}
+            >
+              Register Free
+            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -80,7 +92,19 @@ export const Navbar = () => {
               >
                 Login
               </Button>
-              <Button variant="primary" className="w-full justify-center">Register Free</Button>
+              <Button
+                variant="primary"
+                className="w-full justify-center"
+                onClick={() => {
+                  document.getElementById('login')?.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                  });
+                  setIsOpen(false);
+                }}
+              >
+                Register Free
+              </Button>
             </div>
           </div>
         </div>

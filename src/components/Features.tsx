@@ -1,4 +1,3 @@
-import React from 'react';
 import { Smartphone, FileText, Shield, Zap, Users, Globe } from 'lucide-react';
 
 const FeatureCard = ({ icon: Icon, title, description, badge }: { icon: any, title: string, description: string, badge?: string }) => (

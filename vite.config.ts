@@ -9,8 +9,10 @@ export default defineConfig({
   },
 
   server: {
+    host: '0.0.0.0',   // 👈 allows access from LAN devices
+    port: 5174,        // 👈 default port (change if needed)
     proxy: {
-      '/api': 'http://localhost:6000',
+      '/api': 'http://localhost:5001',
     },
   },
 });
